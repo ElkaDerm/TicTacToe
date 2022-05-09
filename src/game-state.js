@@ -25,15 +25,15 @@ export function checkGameState(index, gameState) {
     switch (tikTakToe(newGameState.gameField)) {
 
         case playerOne:
-            newGameState.winnerMssg = playerOne + ' wins';
+            newGameState.winnerMssg =` Game result: Player ${playerOne}   wins!`;
             newGameState.state = gameOverState;
             break;
         case playerTwo:
-            newGameState.winnerMssg = playerTwo + ' wins';
+            newGameState.winnerMssg = `Game result: Player ${playerTwo}  wins!`;
             newGameState.state = gameOverState;
             break;
         case 'tie':
-            newGameState.winnerMssg = 'tie';
+            newGameState.winnerMssg = `Game result: TIE`;
             newGameState.state = gameOverState;
             break;
 
